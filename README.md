@@ -1,4 +1,4 @@
-# vOpen: Asistente Virtual Inteligente con Watson Assistant
+# Asistente Virtual Inteligente con Watson Assistant
 
 
 

@@ -771,6 +771,16 @@
     },
     {
       "type": "standard",
+      "title": "FLUJO_2",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1571659353813",
+      "conditions": "true",
+      "dialog_node": "node_2_1571659353825"
+    },
+    {
+      "type": "standard",
       "title": "FLUJO_1",
       "output": {
         "generic": []
@@ -781,13 +791,13 @@
     },
     {
       "type": "standard",
-      "title": "IBM INNOVATION LAB",
+      "title": "INNOVATION_LAB",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "IBM INNOVATION LAB"
+                "text": "Bien, espero preguntas sobre IBM INNOVATION LAB. Que quieres saber?"
               }
             ],
             "response_type": "text",
@@ -796,19 +806,22 @@
         ]
       },
       "parent": "node_7_1571419759681",
-      "conditions": "$entrada ==  \"2\"",
-      "dialog_node": "node_6_1571419238451",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$entrada == \"2\"",
+      "dialog_node": "node_1_1571659353813",
       "previous_sibling": "node_2_1571419231933"
     },
     {
       "type": "standard",
-      "title": "IBM CENTRAL",
+      "title": "IBM",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Bien, espero preguntas sobre IBM Central. Que quieres saber?"
+                "text": "Bien, espero preguntas sobre IBM. Que quieres saber?"
               }
             ],
             "response_type": "text",
@@ -822,6 +835,144 @@
       },
       "conditions": "$entrada == \"1\"",
       "dialog_node": "node_2_1571419231933"
+    },
+    {
+      "type": "standard",
+      "title": "Despedida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Espero haber sido de utilidad. Que tengas un muy lindo dia!! Saludos IBMBot"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1571659353825",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1571659353825"
+      },
+      "conditions": "#General_Ending",
+      "dialog_node": "node_6_1571659353825",
+      "previous_sibling": "node_5_1571659353825"
+    },
+    {
+      "type": "standard",
+      "title": "Saludo_General",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola, como estas? Yo estoy bien. Me llamo IBMBot y mi funcionalidad es responder preguntas relacionadas a la empresa IBM, particularmente en este caso sobre el Innovation Lab. Puedo responder a que se dedica y darte la ubicación. Que quieres saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1571659353825",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1571659353825"
+      },
+      "conditions": "#General_Greetings",
+      "dialog_node": "node_5_1571659353825",
+      "previous_sibling": "node_4_1571659353825"
+    },
+    {
+      "type": "standard",
+      "title": "En otras cosas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No le he entendido. Intente reformular la consulta con otras palabras"
+              },
+              {
+                "text": "Realmente hago el esfuerzo de entenderte pero no lo logro, reformule la pregunta"
+              },
+              {
+                "text": "Lo siento, no logro entenderte. Mis funcionalidades son responderte preguntas sobre la empresa IBM."
+              },
+              {
+                "text": "Contactese con este agente humano: tomasfacal\\@ibm.com"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1571659353825",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1571659353825"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_7_1571659353825",
+      "previous_sibling": "node_6_1571659353825"
+    },
+    {
+      "type": "standard",
+      "title": "ubicacionEmpresa",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "IBM Innovation Lab se encuentra ubicado en el edificio de Sinergia Golf,  Dr Héctor Miranda 2361 . Que mas queres saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1571659353825",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1571659353825"
+      },
+      "conditions": "#ubicacionEmpresa",
+      "dialog_node": "node_4_1571659353825",
+      "previous_sibling": "node_3_1571659353825"
+    },
+    {
+      "type": "standard",
+      "title": "rolEmpresa",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "IBM Innovation Lab es un laboratorio enfocado en acompañar la transformación de las empresas, con habilidades y herramientas adecuadas para construir de forma rápida y eficiente las soluciones enfocadas en las necesidades de los clientes.\nPara saber mas informacion, te dejo este link: https://www.youtube.com/watch?v=89HD0WxcIhY\nAlgo mas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1571659353825",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1571659353825"
+      },
+      "conditions": "#rolEmpresa",
+      "dialog_node": "node_3_1571659353825"
     },
     {
       "type": "standard",
@@ -944,7 +1095,7 @@
           {
             "values": [
               {
-                "text": "IBM Uruguay es una empresa multinacional estadounidense de tecnología y consultoría, reconocida como una compañía líder, innovadora, de calidad y referente, por su esfuerzo de brindar cada vez mayor valor agregado a sus clientes.\n\nJunto a una comunidad global de expertos en negocios, ejecutivos y líderes de industria, IBM Uruguay ofrece soluciones de tecnología y recursos para los emprendedores."
+                "text": "IBM Uruguay es una empresa multinacional estadounidense de tecnología y consultoría, reconocida como una compañía líder, innovadora, de calidad y referente, por su esfuerzo de brindar cada vez mayor valor agregado a sus clientes.\n\nJunto a una comunidad global de expertos en negocios, ejecutivos y líderes de industria, IBM Uruguay ofrece soluciones de tecnología y recursos para los emprendedores.\nAlgo mas que quieras saber?"
               }
             ],
             "response_type": "text",
@@ -970,7 +1121,7 @@
             "title": "Seleccione una opcion para hacer preguntas",
             "options": [
               {
-                "label": "IBM Central",
+                "label": "IBM",
                 "value": {
                   "input": {
                     "text": "1"
@@ -978,7 +1129,7 @@
                 }
               },
               {
-                "label": "IBM Innovation Lab",
+                "label": "Innovation Lab",
                 "value": {
                   "input": {
                     "text": "2"

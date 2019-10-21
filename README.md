@@ -34,4 +34,4 @@ Cuando queremos escalar asistentes virtuales en las empresas, se debe tener much
   Un buen ***equipo de desarrollo*** que tenga entendimiento sobre esta cadena de herramientas es un punto clave para brindar una solucion más eficiente. En muchos casos, incluso en grandes empresas, deciden utilizar estas herramientas sin tener un buen conocimiento de las mismas llegando a una solución que no presenta una buena experiencia para el usario, y por ende los usuarios quedan desconformes dañando la reputación de su empresa.
 ***En IBM tenemos el equipo para hacerlo.***
   
- <div align="center" style="width: 100px ; heigth: 100px;"><img src="./lab.jpg"> </img></div>
+ <div align="center" style="width: 10px ; heigth: 100px;"><img src="./lab.jpg"> </img></div>

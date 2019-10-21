@@ -35,3 +35,37 @@ Cuando queremos escalar asistentes virtuales en las empresas, se debe tener much
 ***En IBM tenemos el equipo para hacerlo.***
   
  <div align="center" ><img src="./lab.jpg"> </img></div>
+
+### SOBRE EL SERVICIO WATSON ASSISTANT
+
+***SKILLS*** <br> </br>
+
+Una skill es un contenedor para la inteligencia artificial que permite a un asistente ayudar a sus clientes.
+
+Un asistente dirige solicitudes siguiendo la ruta óptima para resolver un problema de cliente. Añada skills para que su asistente pueda proporcionar una respuesta directa a una pregunta común o hacer referencia a resultados de búsqueda más generalizados para algo más complejo.
+
+***TIPOS DE SKILLS***<br> </br>
+
+DIALOG SKILL: Entiende las preguntas o solicitudes típicas de los usuarios y las responde o las satisface siguiendo un diálogo desarrollado por usted.
+
+SEARCH SKILL: Responde a la pregunta de un usuario buscando información relevante de un origen de datos externo, extrayéndolo y devolviéndolo como respuesta del asistente.
+
+***SKILL DE DIALOGO***<br> </br>
+
+Contiene los datos de entrenamiento y la lógica que permite a un asistente ayudar a sus clientes. Contiene los siguientes tipos assets:
+
+***Intenciones***<br> </br>
+
+Una intención representa la finalidad de una entrada de usuario, como por ejemplo una pregunta sobre las ubicaciones de un negocio o el pago de una factura. El usuario define una intención para cada tipo de solicitud de usuario a la que desea que la aplicación dé soporte. Al nombre de una intención siempre se le antepone el carácter #. Para preparar la skill para que reconozca sus intenciones, debe especificar muchos ejemplos de entradas de usuario e indicar con qué intenciones se correlacionan.
+
+***Dialogo***<br> </br>
+
+Un diálogo es un flujo de conversación que define la forma en que la aplicación responde cuando reconoce intenciones y entidades definidas. Puede utilizar el editor de diálogos para crear conversaciones con los usuarios, proporcionando respuestas basadas en intenciones y entidades que se reconoce en su entrada.
+Para permitir que su skill maneje preguntas más matizadas, defina entidades y haga referencia a las mismas desde el diálogo.
+
+***Entidades***<br> </br>
+
+ Una entidad representa un objeto que sea relevante para las intenciones y que ofrezca un contexto específico para una intención. Por ejemplo, una entidad podría representar una ciudad donde el usuario desea buscar la ubicación de un negocio o el importe del pago de una factura. Al nombre de una entidad siempre se le antepone el carácter @.
+
+Puede entrenar la skill para que reconozca sus entidades proporcionando valores de términos de entidad, sinónimos y expresiones regulares, o identificando el contexto en el que se utiliza normalmente una entidad en una frase. Para ajustar el diálogo, vuelva y añada nodos que comprueben si hay menciones de la entidad en la entrada de usuario, además de las intenciones.
+

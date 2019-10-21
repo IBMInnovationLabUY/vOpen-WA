@@ -69,3 +69,6 @@ Para permitir que su skill maneje preguntas más matizadas, defina entidades y h
 
 Puede entrenar la skill para que reconozca sus entidades proporcionando valores de términos de entidad, sinónimos y expresiones regulares, o identificando el contexto en el que se utiliza normalmente una entidad en una frase. Para ajustar el diálogo, vuelva y añada nodos que comprueben si hay menciones de la entidad en la entrada de usuario, además de las intenciones.
 
+### SOBRE SU LOGICA INTERNA
+
+A medida que añade información, la skill utiliza estos datos exclusivos para crear un modelo de aprendizaje automatico que pueda reconocer estas y otras entradas de usuario similares. Cada vez que añade o cambia los datos de entrenamiento, el proceso de formación se activa para garantizar que el modelo subyacente permanece actualizado a medida que cambian las necesidades de sus clientes y los temas sobre los que desean debatir. Siempre es importante un buen entrenamiento basado en grandes cantidades de ejemplo de usuarios, que abarquen la mayor cantidad de proposiciones distintas que los usuarios utilizan cuando quieren referirse a una determinada intención.

@@ -1,6 +1,6 @@
 # Asistente Virtual Inteligente con Watson Assistant
 
-<img src="./WA.jpg"> </img>
+<div align="center"><img src="./WA.jpg"> </img></div>
 
 ### Links para registrarse en IBM Cloud
 

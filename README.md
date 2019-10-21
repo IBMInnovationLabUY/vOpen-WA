@@ -54,16 +54,16 @@ SEARCH SKILL: Responde a la pregunta de un usuario buscando información relevan
 
 Contiene los datos de entrenamiento y la lógica que permite a un asistente ayudar a sus clientes. Contiene los siguientes tipos assets:
 
-***Intenciones***<br> </br>
+***INTENCIONES***<br> </br>
 
 Una intención representa la finalidad de una entrada de usuario, como por ejemplo una pregunta sobre las ubicaciones de un negocio o el pago de una factura. El usuario define una intención para cada tipo de solicitud de usuario a la que desea que la aplicación dé soporte. Al nombre de una intención siempre se le antepone el carácter #. Para preparar la skill para que reconozca sus intenciones, debe especificar muchos ejemplos de entradas de usuario e indicar con qué intenciones se correlacionan.
 
-***Dialogo***<br> </br>
+***DIALOGO***<br> </br>
 
 Un diálogo es un flujo de conversación que define la forma en que la aplicación responde cuando reconoce intenciones y entidades definidas. Puede utilizar el editor de diálogos para crear conversaciones con los usuarios, proporcionando respuestas basadas en intenciones y entidades que se reconoce en su entrada.
 Para permitir que su skill maneje preguntas más matizadas, defina entidades y haga referencia a las mismas desde el diálogo.
 
-***Entidades***<br> </br>
+***ENTIDADES***<br> </br>
 
  Una entidad representa un objeto que sea relevante para las intenciones y que ofrezca un contexto específico para una intención. Por ejemplo, una entidad podría representar una ciudad donde el usuario desea buscar la ubicación de un negocio o el importe del pago de una factura. Al nombre de una entidad siempre se le antepone el carácter @.
 
